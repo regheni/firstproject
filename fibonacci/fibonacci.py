@@ -1,5 +1,5 @@
 def fibo(n):
-    print("Al", n, "-lea numar din sirul lui Fibonacci este:")
+    print("The", n, "th number of the Fibonacci sring is:")
     x = 0
     y = 1
     s = None
@@ -9,11 +9,11 @@ def fibo(n):
     elif n == 2:
         print(y)
     while no < n:
-        s = x + y
+        s = y + x
         x = y
         y = s
-        no += no
+        no += 1
     return s
 
 
-print(fibo(2))
+print(fibo(8))
